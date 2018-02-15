@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1">
+	<title>Demo Web</title>
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<style>
+		.header {
+			min-height: 100vh;
+			background-image: url("https://images.unsplash.com/photo-1499479061019-b5d178fc3a4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=813d8b10dc366ca4367204168e8ab6d7&auto=format&fit=crop&w=750&q=80");
+			background-size: cover;
+			background-position: center center;
+		}
+		.navbar {
+			background-color: rgba(70, 70, 70, 0.8);
+		}
+		.navbar-light .navbar-nav .nav-link {
+			color: rgba(250, 250, 250, .9);
+		}
+		.navbar-light .navbar-nav .active>.nav-link {
+			color: rgba(200, 200, 200, .9);
+		}
+		.bg-cover {
+			background-size: cover;
+			background-position: center center;
+		}
+		.bg-attachment {
+			background-attachment: fixed;
+		}
+		.footer {
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<header class="header d-flex justify-content-center align-items-center">
+		<div class="text-center text-white">
+			<h1>WELCOME TO DEMO WEB</h1>
+			<h5>Andy's demo website</h5>
+			<button class="btn btn-outline-info my-3 btn-lg">Button</button>
+		</div>
+	</header>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbar2SupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servises</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+	</nav>
+	<section class="mt-4">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="carousel slide" data-ride="carousel" data-interval="2000" id="carouselExampleIndicators">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100 img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1493514789931-586cb221d7a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f8ab2656cca1f3fadd0cc4e254b27c8d&auto=format&fit=crop&w=751&q=80">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1506574723610-7fe0f0c7f9ea?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=601fe5b2e96252a6f6205f1b021f0e2e&auto=format&fit=crop&w=750&q=80">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100 img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1473800447596-01729482b8eb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4090941d6c2d237f3495002d6751d9e4&auto=format&fit=crop&w=750&q=80">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h3>This is a section title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-cover bg-attachment" style="background-image: url('https://images.unsplash.com/photo-1493979969019-a78fdb263931?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c9ad56dc0d15fe9d71af2ab7b3642e04&auto=format&fit=crop&w=334&q=80')">
+		<div class="container">
+			<h3 class="text-center pt-3">About Us</h3>
+			<p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+			<div class="row py-3">
+				<div class="col-md-4 d-flex">
+					<i class="fa fa-desktop fa-3x mr-3"></i>
+					<div>
+						<h4>LOREM IPSUM</h4>
+						<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex">
+					<i class="far fa-chart-bar fa-3x mr-3"></i>
+                    <div>
+                        <h5>DOLOR SITEMA</h5>
+                        <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                    </div>
+				</div>
+				<div class="col-md-4 d-flex">
+					<i class="fa fa-paper-plane fa-3x mr-3"></i>
+                    <div>
+                        <h5>SED UT PERSPICIATIS</h5>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="py-3">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>This is a section title</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div class="col-md-6">
+					<img class="img-fluid img-thumbnail" src="https://images.unsplash.com/photo-1488711500009-f9111944b1ab?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db8d52e77ea934255d46dcd0f49353bf&auto=format&fit=crop&w=752&q=80">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer mt-3 py-3">
+		<div class="container text-white">
+			<div class="row">
+				<div class="col-md-4">
+					<h3 class="text-center">About Us</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+				</div>
+				<div class="col-md-4">
+					<h3 class="text-center">Map</h3>
+					<ul>
+						<a>aaaa</a><br/>
+						<a>bbbb</a><br/>
+						<a>cccc</a>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<h3 class="text-center">Contact Us</h3>
+					<ul>
+						<a>aaaa</a><br/>
+						<a>bbbb</a><br/>
+						<a>cccc</a>
+					</ul>
+				</div>
+			</div>
+			<br/>
+			<h6 class="text-center">@Copyright Andy All Rights Reserved</h6>
+		</div>
+	</footer>
+</body>
+</html>
