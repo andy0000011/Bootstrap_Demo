@@ -33,6 +33,7 @@
 			cursor: pointer;
 			background-color: rgba(200, 200, 200, 0.7);
 			margin: 0.3%;
+			display: block;
 		}
 		p:hover {
 			background-color: rgba(180, 180, 180, 0.7);
@@ -80,10 +81,11 @@
 				}
 			}
 		}
-		function remove(id) {
+		function remove() {
 			var checked = document.getElementsByClassName('checked');
-			console.log(checked);
-			checked.parentNode.removeChild(checked);
+			for (var i = 0; i < checked.length; i++) {
+				checked[i].style.display = 'none';
+			}
 		}
 	</script>
 </body>  
